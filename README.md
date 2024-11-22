@@ -5,7 +5,8 @@
 - [Introdução](#introdução)
 - [Tecnologias](#tecnologias)
 - [Instalação](#instalação)
-- [Como Rodar o Projeto](#como-rodar-o-projeto)
+- [Como Rodar o Projeto](#Siga-os-passos-abaixo-para-rodar-o-projeto-em-seu-ambiente-local
+)
 - [Escopo de Funcionalidades](#escopo-de-funcionalidades)
 - [Exemplo de Uso](#exemplo-de-uso)
 - [Status do Projeto](#status-do-projeto)
