@@ -9,7 +9,6 @@
 - [Escopo de Funcionalidades](#escopo-de-funcionalidades)
 - [Exemplo de Uso](#exemplo-de-uso)
 - [Status do Projeto](#status-do-projeto)
-- [Contribuindo](#contribuindo)
 - [Referências](#referências)
 
 ## Introdução
