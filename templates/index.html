@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Gerenciador de Tarefas</h1>
+    <form method="GET" action="/">
+        <input type="text" name="search" placeholder="Pesquisar tarefa">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <form method="POST" action="/add">
+        <input type="text" name="title" placeholder="Título" required>
+        <input type="text" name="description" placeholder="Descrição">
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <ul>
+        {% for task in tasks %}
+        <li>
+            <strong>{{ task['title'] }}</strong> - {{ task['description'] }}
+            <form method="POST" action="/update/{{ task['id'] }}">
+                <select name="status">
+                    <option value="Pendente" {% if task['status'] == "Pendente" %}selected{% endif %}>Pendente</option>
+                    <option value="Concluída" {% if task['status'] == "Concluída" %}selected{% endif %}>Concluída</option>
+                </select>
+                <button type="submit">Atualizar</button>
+            </form>
+            <a href="/delete/{{ task['id'] }}">Excluir</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

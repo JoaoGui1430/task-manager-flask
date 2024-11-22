@@ -1,0 +1,4 @@
+venv/             # Diretório do ambiente virtual
+*.pyc             # Arquivos compilados do Python
+__pycache__/      # Cache do Python
+*.db              # Banco de dados SQLite
